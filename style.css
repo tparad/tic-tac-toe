@@ -1,0 +1,85 @@
+* {
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+
+.grid-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    font-size: 10rem;
+    cursor: pointer;
+}
+
+#player-signup-window {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   z-index: 20;
+   width: 50%;
+   min-width: 500px;
+   max-width: 1000px;
+   border: solid 1px black;
+   background-color: white;
+}
+  
+#signup-overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+#signup-overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+#player-signup-window.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#player-submit-button {
+    cursor: pointer;
+    outline:none;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    margin: 10px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#player-submit-button:hover {
+    background-color: #4285f4;
+}
+
+#player-container {
+    margin-bottom: 20px;
+}
+
+#restart-button {
+    margin: 10px;
+}

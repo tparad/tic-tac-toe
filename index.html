@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <div id="player-container">
+        <div id="player-one-display"></div>
+        <div id="player-two-display"></div>
+    </div>
+    <div id="game-message"></div>
+    <div id="grid-container"></div>
+    <div>
+        <button id="restart-button">Reset</button>
+    </div>
+    <div id="player-signup-window" class="active">
+        <form id="player-signup-form"> 
+            <div>
+                Player 1: <input id="player-one-name" type="text">
+            </div>
+            <div>
+                Player 2: <input id="player-two-name" type="text">
+            </div>
+        </form>
+        <button id="player-submit-button">Start!</button>
+    </div>
+    <div id="signup-overlay" class="active"></div>
+<script src="app.js"></script>
+</body>
+</html>
